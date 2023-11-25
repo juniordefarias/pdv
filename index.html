@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <img id="help-button" src="img/help-circle.svg" alt="">
+    <p  id="help-text" class="invisible">7894900019926 7896213000189 7894000022147 7896098900208</p>
+    <div class="bd-container">
+        <div class="reader__container">
+            <div class="box">
+                <p class="box__label">Quantidade</p>
+                <input type="number" name="qtd" id="qtd" value="1">
+            </div>
+            <div class="box">
+                <p class="box__label">Código</p>
+                <input type="number" name="cod" id="cod" autofocus='true'>
+            </div>
+        </div>
+        <div class="nfce__container">
+            <div class="nfce">
+                <div class="nfce__head">
+                    <div class="nfce__head__img">
+                        <img src="img/logo-sefaz.svg" alt="">
+                    </div>
+                    <div class="nfce__head__data">
+                        <p>De Farias Ltda</p>
+                        <p>CNPJ: 00.000.000/0001-00 IE:000000000</p>
+                        <p>Rua dos bobos, 0, Pernambuco, Recife, PE</p>
+                    </div>
+                </div>
+
+                <p style="font-size: 0.8rem;text-align: center;margin: 0.5rem 0 1rem;">DANFE NFC-e - Documento Auxiliar da Nota Fiscal Eletrônica</p>
+
+                <div class="nfce__table">
+                    <table id="table">
+                        <thead>
+                            <tr>
+                                <th>Código</th>
+                                <th>Descrição</th>
+                                <th>Quantidade</th>
+                                <th>Valor-unt</th>
+                                <th>Valor-total</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tbody">
+
+                        </tbody>
+                    </table>
+                </div>
+                <div class="operador">
+                    <p style="margin-bottom: 0.25rem;" id="nfceTotal">Quantidade de itens: 0</p>
+                </div>
+               
+                <!--<div class="operador">
+                    <p>Caixa:02</p>
+                    <p>Operador:Tim Melo Rêgo</p>
+                </div>-->
+            </div>
+
+        </div>
+        <div class="payment__container">
+            
+            <div class="box">
+                <p class="box__label">Total</p>
+                <p class="box__output" id="total">R$ 0,00</p>
+            </div>
+            <div class="box">
+                <p class="box__label" id="restLabel">Resta</p>
+                <p class="box__output" id="rest">R$ 0,00</p>
+            </div>
+            <div class="box">
+                <p class="box__label">Forma de pagamento</p>
+                <select id="way" disabled>
+                    <!--<option value="">Dinheiro</option>
+                    <option value="">Cartão</option>-->
+                </select>
+            </div>
+            <div class="box">
+                <p class="box__label">Valor</p>
+                <input type="number" name="value" id="value" disabled>
+            </div>
+            <div class="box">
+                <p class="box__label">Troco</p>
+                <p class="box__output" id="change" >R$ 0,00</p>
+            </div>
+        </div>
+    </div>
+    .
+    <script src="script.js"></script>
+</body>
+</html>
